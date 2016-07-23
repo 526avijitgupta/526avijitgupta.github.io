@@ -1,16 +1,16 @@
 ---
 title: "The Journey Begins"
 layout: post
-date: 2016-07-23 02:42
+date: 2016-07-22 02:42
 image: '/assets/images/'
 description:
 tag:
 blog: true
 jemoji:
-author:
+author: Avijit Gupta
 ---
 
-Since this is an introductory blog post, I'll keep it short and simple. This is my first blog post after shifting to a new setup of writing. I'm excited to see that the journey has finally begun.
+Since this is an introductory post, I'll keep it short and simple. This is my first blog post after shifting to a new setup of writing. I'm excited to see the journey beginning.
 
 #### What setup have I shifted to for my blog, and what advantages does it offer ?
 

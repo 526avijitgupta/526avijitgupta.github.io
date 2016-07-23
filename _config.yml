@@ -30,17 +30,17 @@ disqus: false
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
-twitter: 526avijit
-google: 526avijit
+# google: 526avijit
 # instagram: myinstagram
 # pinterest: mypinterest
-linkedin: 526avijit
 # youtube: myyoutube
 # spotify: myspotify
-github: 526avijitgupta
 # medium: medium
 # vimeo: myvimeo
+github: 526avijitgupta
 email: 526avijit@gmail.com
+twitter: 526avijit
+linkedin: 526avijit
 
 authors:
     526avijit:
@@ -53,7 +53,7 @@ authors:
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-width: normal
+width: large
 
 # if you don't need pagination, comment the *paginate* configs below
 # paginate: 5

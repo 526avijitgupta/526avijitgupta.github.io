@@ -7,7 +7,7 @@ description:
 tag:
 blog: true
 jemoji:
-author:
+author: Avijit Gupta
 ---
 
 ## What is spacemacs ?
