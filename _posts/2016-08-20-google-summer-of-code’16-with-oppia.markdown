@@ -24,12 +24,13 @@ Hence, choosing a project and making a good proposal was the foremost step. I wo
 
 ### Detailed Description of Project:
 
-<GSoC and ur own timeline> - contributions, proposal, bonding, project timeline.
-
-Before I begin introducing the project, it's a must to know that Oppia is a community of learners and teachers to help anyone learn anything they want in an effective and enjoyable way.
+Oppia is a community of learners and teachers to help anyone learn anything they want in an effective and enjoyable way.
 The project "Creator Dashboard" aimed at implementing a dashboard that allows lesson creators to see common statistics like total plays, average rating, common student misconceptions,
 and student-submitted feedback for the lessons they own -- and to make it easy for creators to take action on this information.
 Basically, it was a full-stack web project that involved working on AngularJS on the frontend and Python (Google App Engine) on the backend.
+
+##### Final work:
+![Markdowm Image][1]{: class="bigger-image" }
 
 ##### Week-by-week progress:
 #### Week #1:
@@ -82,9 +83,9 @@ Basically, it was a full-stack web project that involved working on AngularJS on
 ### Conclusions:
 Well, during this 3 months of GSoC, I learn it a lot. I did the best that I could do with my knowledge and help from Xinyu, Allan, Sean, Ben and Jacob.
 
-I can say that my work is 95% concluded. There’s still some revision to be made, some code to be clean up. And I’m doing that.
-### Useful Links:
+I can say that my work is 95% concluded. There’s still a PR left unmerged and some more code I've promised to write. And I’m doing that.
 
+### Useful Links:
 ##### List of PRs:
 1. https://github.com/oppia/oppia/pull/1891
 2. https://github.com/oppia/oppia/pull/2082
@@ -105,3 +106,6 @@ I can say that my work is 95% concluded. There’s still some revision to be mad
 
 #### Link to commits:
 https://github.com/oppia/oppia/commits/develop?author=526avijitgupta
+
+
+[1]: https://github.com/526avijitgupta/526avijitgupta.github.io/raw/master/assets/images/dashboard.png
