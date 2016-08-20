@@ -104,7 +104,7 @@ The project also involved taking feedback from actual creators after the creatio
 
 ## Conclusions:
 
-Firstly, I would like to thank Google for enabling students to participate in open source development through GSoC, the whole of Oppia community for accepting my project proposal and letting me embark on this fantastic adventure, and most importantly my mentors - [Sean Lip](https://github.com/seanlip), .[Xinyu Wu](https://github.com/wxyxinyu) and [Allan Zhou](https://github.com/AllanYangZhou) for being there to help me.
+Firstly, I would like to thank Google for enabling students to participate in open source development through GSoC, the whole of Oppia community for accepting my project proposal and letting me embark on this fantastic adventure, and most importantly my mentors - [Sean Lip](https://github.com/seanlip), [Xinyu Wu](https://github.com/wxyxinyu) and [Allan Zhou](https://github.com/AllanYangZhou) for being there to help me.
 
 Well, during this 3 months of GSoC, I learn a lot. I did the best that I could do with my knowledge and help from the community. And though I can say that most of my work is concluded, there’s still a PR left unmerged, a few ongoing PRs involving work unrelated to GSoC and some more code I've promised to write. And I’m happy to do that!
 
@@ -122,6 +122,10 @@ Well, during this 3 months of GSoC, I learn a lot. I did the best that I could d
 #### Accepted proposal:
 
 [https://github.com/oppia/oppia/wiki/pdfs/GSoC2016AvijitGupta.pdf](https://github.com/oppia/oppia/wiki/pdfs/GSoC2016AvijitGupta.pdf)
+
+#### Daily devlogs of work:
+
+[https://docs.google.com/document/d/10EwtZYIUAuPhmRXzuN6JLEAexdTH0m1g-6Knqf35GQg/edit?usp=sharing](https://docs.google.com/document/d/10EwtZYIUAuPhmRXzuN6JLEAexdTH0m1g-6Knqf35GQg/edit?usp=sharing)
 
 
 
