@@ -4,7 +4,7 @@ layout: post
 date: 2016-07-23 03:49
 image: '/assets/images/'
 description:
-tag: spacemacs, emacs, editors
+tag: spacemacs
 blog: true
 jemoji:
 author: Avijit Gupta
