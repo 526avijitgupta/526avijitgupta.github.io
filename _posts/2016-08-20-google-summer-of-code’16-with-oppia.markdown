@@ -10,21 +10,17 @@ jemoji:
 author: Avijit Gupta
 ---
 
-Every year, Google invites open source projects from various organizations so that students across the globe can contribute to them as a part of Google Summer of Code programme.
-I was fortunate enough to be a part of GSoC-16 under the organization Oppia. Before I go on and detail my journey, let me tell you something about myself.
-
-I am Avijit Gupta, a Computer Science undergraduate who loves to contribute to Open Source. I primarily like to work on Frontend related technologies.
+Every year, Google invites open source projects from various organizations so that students across the globe can contribute to them as a part of [Google Summer of Code](https://developers.google.com/open-source/gsoc/timeline) program.
+I was fortunate enough to be a part of GSoC-16 under the organization Oppia. Before I go on and detail my journey, let me tell you something about myself: I am Avijit Gupta, a Computer Science undergraduate who loves to contribute to Open Source. I primarily like to work on Frontend related technologies.
 
 My journey with Oppia began as a contributor within the first few days after the announcement of selected organizations in GSoC this year.
-The two possibly main parts to backing a GSoC project are: code contributions (in terms of bugfixes, enhancements) and a great project proposal.
-Hence, choosing a project and making a good proposal was the foremost step. I worked on the project - Creator Dashboard.
 
 
 ## About the Project:
 
 [Oppia](http://oppia.org/) is a community of learners and teachers to help anyone learn anything they want in an effective and enjoyable way.
-The project "Creator Dashboard" aimed at implementing a dashboard that allows lesson creators to see common statistics like total plays, average rating, common student misconceptions,
-and student-submitted feedback for the lessons they own -- and to make it easy for creators to take action on this information.
+The project "Creator Dashboard" aimed at implementing a dashboard that allows lesson creators to see common statistics like total plays, average rating, common student misconceptions, and student-submitted feedback for the lessons they own -- and to make it easy for creators to take action on this information.
+
 Basically, it was a full-stack web project that involved working on AngularJS on the frontend and Python (Google App Engine) on the backend.
 
 
@@ -32,16 +28,11 @@ Basically, it was a full-stack web project that involved working on AngularJS on
 ![Markdowm Image][1]{: class="bigger-image" }
 
 
-The screenshot of the page shown above is the current home page of all logged in users at [Oppia.org](https://oppia.org). The most of the statistics currently visible are updated in real time. The users also have options to view the dashboard in 2 formats - list view and card view. The list view is focussed more on power users, or the ones who like to see all their data at once. Card view is a more simplified and beautified format of displaying the explorations as tiles. The statistics visible in the top white row are aggregated figures as a whole. Clicking on any exploration in the card view opens up a dropdown which provides with the exploration-specific data. The list of explorations can be sorted easily by either using the select dropdown or by clicking on the table headers in list view as well - thus making it easy for users to view their explorations based on different parameters quickly and easily.
+The screenshot of the page shown above is the current home page of all logged in users at [Oppia.org](https://oppia.org). The most of the statistics currently visible are updated in real time. The users have options to view the dashboard in 2 different formats - list view and card view. The list view is focussed more on power users, or the ones who like to see all their data at once. Card view is a more simplified and beautified format of displaying the explorations as tiles.
 
-The project involved taking feedback from actual creators after the creation of a MVP to ensure that the development is being done keeping the needs of creators at highest priority.
+The statistics visible in the top white row are aggregated figures as a whole. Clicking on any exploration in the card view opens up a dropdown which provides with the exploration-specific data. The list of explorations can be sorted easily by either using the select dropdown or by clicking on the table headers in list view as well - thus making it easy for users to view their explorations based on different parameters quickly and easily.
 
-
-### Future of the Project:
-
-* Write end-to-end tests for the creator dashboard ([issue #2403](https://github.com/oppia/oppia/issues/2403)).
-* Add support for pagination of content in dashboard (was partially implemented in [pull request #2265](https://github.com/oppia/oppia/pull/2265) before deciding to discontinue it for the time being).
-* Collect and display statistics for collections as well, and not just individual explorations.
+The project also involved taking feedback from actual creators after the creation of a Minimum Viable Product(MVP) to ensure that the development is being done keeping the true needs of creators at highest priority.
 
 
 ### Weekly progress logs:
@@ -104,24 +95,31 @@ The project involved taking feedback from actual creators after the creation of 
 * Pull Requests: [https://github.com/oppia/oppia/pull/2296](https://github.com/oppia/oppia/pull/2296), [https://github.com/oppia/oppia/pull/2318](https://github.com/oppia/oppia/pull/2318)
 
 
+### Future of the Project:
+
+* Write end-to-end tests for the creator dashboard ([issue #2403](https://github.com/oppia/oppia/issues/2403)).
+* Add support for pagination of content in dashboard (was partially implemented in [pull request #2265](https://github.com/oppia/oppia/pull/2265) before deciding to discontinue it for the time being).
+* Collect and display statistics for collections as well, and not just individual explorations.
+
+
 ## Conclusions:
 
 Firstly, I would like to thank Google for enabling students to participate in open source development through GSoC, the whole of Oppia community for accepting my project proposal and letting me embark on this fantastic adventure, and most importantly my mentors - [Sean Lip](https://github.com/seanlip), .[Xinyu Wu](https://github.com/wxyxinyu) and [Allan Zhou](https://github.com/AllanYangZhou) for being there to help me.
 
-Well, during this 3 months of GSoC, I learn a lot. I did the best that I could do with my knowledge and help from the community. And though I can say that my work is 95% concluded, there’s still a PR left unmerged, a few ongoing PRs involving work apart not related to GSoC and some more code I've promised to write. And I’m happy to do that!
+Well, during this 3 months of GSoC, I learn a lot. I did the best that I could do with my knowledge and help from the community. And though I can say that most of my work is concluded, there’s still a PR left unmerged, a few ongoing PRs involving work unrelated to GSoC and some more code I've promised to write. And I’m happy to do that!
 
 
 ## Useful Links:
 
-### All commits to Oppia:
+#### All commits to Oppia:
 
 [https://github.com/oppia/oppia/commits/develop?author=526avijitgupta](https://github.com/oppia/oppia/commits/develop?author=526avijitgupta)
 
-### GSoC Project:
+#### GSoC Project:
 
 [https://summerofcode.withgoogle.com/projects/#5419488019218432](https://summerofcode.withgoogle.com/projects/#5419488019218432)
 
-### Accepted proposal:
+#### Accepted proposal:
 
 [https://github.com/oppia/oppia/wiki/pdfs/GSoC2016AvijitGupta.pdf](https://github.com/oppia/oppia/wiki/pdfs/GSoC2016AvijitGupta.pdf)
 
