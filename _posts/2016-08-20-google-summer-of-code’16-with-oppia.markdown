@@ -3,10 +3,10 @@ title: "Google Summer of Code’16 with Oppia"
 layout: post
 date: 2016-08-20 00:30
 image: '/assets/images/'
-description:
-tag: gsoc
+tag:
+- gsoc
+- oppia
 blog: true
-jemoji:
 author: Avijit Gupta
 ---
 
@@ -14,8 +14,6 @@ Every year, Google invites open source projects from various organizations so th
 I was fortunate enough to be a part of GSoC-16 under the organization Oppia. Before I go on and detail my journey, let me tell you something about myself: I am Avijit Gupta, a Computer Science undergraduate who loves to contribute to Open Source. I primarily like to work on Frontend related technologies.
 
 My journey with Oppia began as a contributor within the first few days after the announcement of selected organizations in GSoC this year.
-
----
 
 ## About the Project:
 
@@ -39,7 +37,6 @@ The new dashboard page allows creators to view their explorations in either the 
 The statistics shown in the top white row are values calculated across all the explorations of a user. In the default card view, explorations may be clicked on to open up a dropdown which provides statistics for that exploration. However, if the exploration is private then the user will be taken directly to the editor. The explorations can be sorted using the select dropdown and even by clicking on the table headers in the list view.
 In order to ease the process of popularizing the content created, there are options in the dashboard to share explorations on popular social media platforms like Google+, Facebook, and Twitter.
 Lastly, to provide an equally appealing experience for the users browsing the dashboard through mobile devices, care was taken  to ensure the new dashboard be almost as well equipped as it’s desktop version. Here’s how it looks on smaller screens:
-
 ![Markdowm Image][2]
 
 ---
