@@ -29,9 +29,8 @@ Revamping the existing “Creator Dashboard” aimed at implementing a dashboard
 
 2. Prioritize the explorations in the dashboard which need action, decided on the basis of different parameters like number of new feedback and number of unresolved answers.
 
-
-### Final work:
 ![Markdowm Image][1]{: class="bigger-image" }
+<figcaption class="caption">Creator Dashboard after my work</figcaption>
 
 The new dashboard page allows creators to view their explorations in either the default view as shown above (card view) or in a tabular format (list view). Users can switch to the list view to see a more informative version of the dashboard.
 
@@ -118,22 +117,13 @@ Well, during this 3 months of GSoC, I learn a lot. I did the best that I could d
 
 ## Useful Links:
 
-#### All commits to Oppia:
+* All commits to Oppia: [https://github.com/oppia/oppia/commits/develop?author=526avijitgupta](https://github.com/oppia/oppia/commits/develop?author=526avijitgupta)
 
-[https://github.com/oppia/oppia/commits/develop?author=526avijitgupta](https://github.com/oppia/oppia/commits/develop?author=526avijitgupta)
+* GSoC Project: [https://summerofcode.withgoogle.com/projects/#5419488019218432](https://summerofcode.withgoogle.com/projects/#5419488019218432)
 
-#### GSoC Project:
+* Accepted proposal: [https://github.com/oppia/oppia/wiki/pdfs/GSoC2016AvijitGupta.pdf](https://github.com/oppia/oppia/wiki/pdfs/GSoC2016AvijitGupta.pdf)
 
-[https://summerofcode.withgoogle.com/projects/#5419488019218432](https://summerofcode.withgoogle.com/projects/#5419488019218432)
-
-#### Accepted proposal:
-
-[https://github.com/oppia/oppia/wiki/pdfs/GSoC2016AvijitGupta.pdf](https://github.com/oppia/oppia/wiki/pdfs/GSoC2016AvijitGupta.pdf)
-
-#### Daily devlogs of work:
-
-[https://docs.google.com/document/d/10EwtZYIUAuPhmRXzuN6JLEAexdTH0m1g-6Knqf35GQg/edit?usp=sharing](https://docs.google.com/document/d/10EwtZYIUAuPhmRXzuN6JLEAexdTH0m1g-6Knqf35GQg/edit?usp=sharing)
-
+* Daily devlogs of work: [https://docs.google.com/document/d/10EwtZYIUAuPhmRXzuN6JLEAexdTH0m1g-6Knqf35GQg/edit?usp=sharing](https://docs.google.com/document/d/10EwtZYIUAuPhmRXzuN6JLEAexdTH0m1g-6Knqf35GQg/edit?usp=sharing)
 
 
 [1]: https://github.com/526avijitgupta/526avijitgupta.github.io/raw/master/assets/images/dashboard.png
