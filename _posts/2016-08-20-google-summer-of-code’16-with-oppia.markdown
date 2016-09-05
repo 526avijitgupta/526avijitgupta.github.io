@@ -19,77 +19,84 @@ My journey with Oppia began as a contributor within the first few days after the
 ## About the Project:
 
 [Oppia](http://oppia.org/) is a community of learners and teachers to help anyone learn anything they want in an effective and enjoyable way.
+Being a community based on education, it’s absolutely important that the quality of content is not compromised at any cost. Content being the primary focus leads us all to believe that content creators play a pivotal role in the learning pipeline. The learning experience can be better enhanced with improvements in the so-called “explorations” (lessons) created. To accomplish this, the creator must be made aware of the current state of his/her exploration(s), so that each step forward is towards the improvement of the quality of content.
+
 The project "Creator Dashboard" aimed at implementing a dashboard that allows lesson creators to see common statistics like total plays, average rating, common student misconceptions, and student-submitted feedback for the lessons they own -- and to make it easy for creators to take action on this information.
 
-Basically, it was a full-stack web project that involved working on AngularJS on the frontend and Python (Google App Engine) on the backend.
+Revamping the existing “Creator Dashboard” aimed at implementing a dashboard with the following goals:
+
+1. Allow lesson creators to see common statistics like total plays, average rating, common student misconceptions, and student-submitted feedback for the lessons they own – and to make it easy for creators to take action on this information.
+
+2. Prioritize the explorations in the dashboard which need action, decided on the basis of different parameters like number of new feedback and number of unresolved answers.
 
 
 ### Final work:
 ![Markdowm Image][1]{: class="bigger-image" }
 
+The new dashboard page allows creators to view their explorations in either the default view as shown above (card view) or in a tabular format (list view). Users can switch to the list view to see a more informative version of the dashboard.
 
-The screenshot of the page shown above is the current home page of all logged in users at [Oppia.org](https://oppia.org). The most of the statistics currently visible are updated in real time. The users have options to view the dashboard in 2 different formats - list view and card view. The list view is focussed more on power users, or the ones who like to see all their data at once. Card view is a more simplified and beautified format of displaying the explorations as tiles.
+The statistics shown in the top white row are values calculated across all the explorations of a user. In the default card view, explorations may be clicked on to open up a dropdown which provides statistics for that exploration. However, if the exploration is private then the user will be taken directly to the editor. The explorations can be sorted using the select dropdown and even by clicking on the table headers in the list view.
+In order to ease the process of popularizing the content created, there are options in the dashboard to share explorations on popular social media platforms like Google+, Facebook, and Twitter.
+Lastly, to provide an equally appealing experience for the users browsing the dashboard through mobile devices, care was taken  to ensure the new dashboard be almost as well equipped as it’s desktop version. Here’s how it looks on smaller screens:
 
-The statistics visible in the top white row are aggregated figures as a whole. Clicking on any exploration in the card view opens up a dropdown which provides with the exploration-specific data. The list of explorations can be sorted easily by either using the select dropdown or by clicking on the table headers in list view as well - thus making it easy for users to view their explorations based on different parameters quickly and easily.
-
-The project also involved taking feedback from actual creators after the creation of a Minimum Viable Product(MVP) to ensure that the development is being done keeping the true needs of creators at highest priority.
+![Markdowm Image][2]
 
 
-### Weekly progress logs:
+#### Weekly progress logs:
 
-#### Week #1:
+##### Week #1:
 * Started off work by creating a continuous map-reduce job which will actually calculate the statistics.
 * Changes in existing data models to store the computed data.
 
-#### Week #2:
+##### Week #2:
 * Write unit tests and integration tests for the map-reduce job.
 * Pull Request: [https://github.com/oppia/oppia/pull/1891](https://github.com/oppia/oppia/pull/1891)
 
-#### Week #3:
+##### Week #3:
 * Write a backend service to fetch data from models and send it to the controllers, along with unit tests.
 * Pull Request: [https://github.com/oppia/oppia/pull/2082](https://github.com/oppia/oppia/pull/2082)
 
-#### Week #4:
+##### Week #4:
 * Implement controller on backend which fetches the data through the service, and sends it to the frontend as a JSON response.
 * Improve on the existing code to make it less redundant and use `get_multi` datastore calls as an optimization.
 * Pull Requests: [https://github.com/oppia/oppia/pull/2096](https://github.com/oppia/oppia/pull/2096), [https://github.com/oppia/oppia/pull/2101](https://github.com/oppia/oppia/pull/2101)
 
-#### Week #5:
+##### Week #5:
 * Work on creating a service on frontend and the changes in controller.
 * Testing both the service and controller.
 * Make changes to the existing view of dashboard according to the latest mocks to mark the completion of MVP.
 * Pull Requests: [https://github.com/oppia/oppia/pull/2126](https://github.com/oppia/oppia/pull/2126), [https://github.com/oppia/oppia/pull/2151](https://github.com/oppia/oppia/pull/2151)
 
-#### Week #6:
+##### Week #6:
 * Additions to frontend view of dashboard in form of creating the card view for the dashboard.
 * Pull Requests: [https://github.com/oppia/oppia/pull/2155](https://github.com/oppia/oppia/pull/2155), [https://github.com/oppia/oppia/pull/2170](https://github.com/oppia/oppia/pull/2170)
 
-#### Week #7:
+##### Week #7:
 * Write a cron job to keep history of stats being recorded for each user. This kicks off a one-off map-reduce job to perform actual calculations.
 * Tests for both cron job and one-off job.
 * Pull Request: [https://github.com/oppia/oppia/pull/2173](https://github.com/oppia/oppia/pull/2173)
 
-#### Week #8:
+##### Week #8:
 * Fetch and display open feedback in dashboard - frontend and backend changes along with tests.
 * Pull Request: [https://github.com/oppia/oppia/pull/2239](https://github.com/oppia/oppia/pull/2239)
 
-#### Week #9:
+##### Week #9:
 * Add realtime layer to statistics continuous job (written in the beginning) along with tests.
 * Pull Request: [https://github.com/oppia/oppia/pull/2238](https://github.com/oppia/oppia/pull/2238)
 
-#### Week #10:
+##### Week #10:
 * Calculate and display change in statistics relative to the previous week's data.
 * Display new feedback on frontend separately.
 * Pull Requests: [https://github.com/oppia/oppia/pull/2252](https://github.com/oppia/oppia/pull/2252), [https://github.com/oppia/oppia/pull/2281](https://github.com/oppia/oppia/pull/2281)
 
-#### Week #11:
+##### Week #11:
 * Make creator dashboard UI responsive, so that it looks equally good on mobile devices as on desktops.
 * Pull Request: [https://github.com/oppia/oppia/pull/2291](https://github.com/oppia/oppia/pull/2291)
 
-#### Week #12:
+##### Week #12:
 * (Marked as busy)
 
-#### Week #13:
+##### Week #13:
 * Work on adding sorting functionality to the list of explorations according to all the available parameters which are visible to the user, along with tests.
 * Implement a dropdown which appears on clicking on each non-private exploration and displays most important statistical data to the user at once (PR for this is still not merged, due to a few failing tests!)
 * Pull Requests: [https://github.com/oppia/oppia/pull/2296](https://github.com/oppia/oppia/pull/2296), [https://github.com/oppia/oppia/pull/2318](https://github.com/oppia/oppia/pull/2318)
@@ -104,7 +111,7 @@ The project also involved taking feedback from actual creators after the creatio
 
 ## Conclusions:
 
-Firstly, I would like to thank Google for enabling students to participate in open source development through GSoC, the whole of Oppia community for accepting my project proposal and letting me embark on this fantastic adventure, and most importantly my mentors - [Sean Lip](https://github.com/seanlip), [Xinyu Wu](https://github.com/wxyxinyu) and [Allan Zhou](https://github.com/AllanYangZhou) for being there to help me.
+To conclude, I would like to thank Google for enabling students to participate in open source development through GSoC, the whole of Oppia community for accepting my project proposal and letting me embark on this fantastic adventure, and most importantly my mentors - [Sean Lip](https://github.com/seanlip), [Xinyu Wu](https://github.com/wxyxinyu) and [Allan Zhou](https://github.com/AllanYangZhou) for being there to help me.
 
 Well, during this 3 months of GSoC, I learn a lot. I did the best that I could do with my knowledge and help from the community. And though I can say that most of my work is concluded, there’s still a PR left unmerged, a few ongoing PRs involving work unrelated to GSoC and some more code I've promised to write. And I’m happy to do that!
 
@@ -130,3 +137,4 @@ Well, during this 3 months of GSoC, I learn a lot. I did the best that I could d
 
 
 [1]: https://github.com/526avijitgupta/526avijitgupta.github.io/raw/master/assets/images/dashboard.png
+[2]: https://github.com/526avijitgupta/526avijitgupta.github.io/raw/master/assets/images/dashboard-mobile.png
