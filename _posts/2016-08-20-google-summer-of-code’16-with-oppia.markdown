@@ -15,6 +15,7 @@ I was fortunate enough to be a part of GSoC-16 under the organization Oppia. Bef
 
 My journey with Oppia began as a contributor within the first few days after the announcement of selected organizations in GSoC this year.
 
+---
 
 ## About the Project:
 
@@ -29,8 +30,9 @@ Revamping the existing “Creator Dashboard” aimed at implementing a dashboard
 
 2. Prioritize the explorations in the dashboard which need action, decided on the basis of different parameters like number of new feedback and number of unresolved answers.
 
+### Final Work:
+
 ![Markdowm Image][1]{: class="bigger-image" }
-<figcaption class="caption">Creator Dashboard after my work</figcaption>
 
 The new dashboard page allows creators to view their explorations in either the default view as shown above (card view) or in a tabular format (list view). Users can switch to the list view to see a more informative version of the dashboard.
 
@@ -40,8 +42,9 @@ Lastly, to provide an equally appealing experience for the users browsing the da
 
 ![Markdowm Image][2]
 
+---
 
-#### Weekly progress logs:
+### Weekly progress logs:
 
 ##### Week #1:
 * Started off work by creating a continuous map-reduce job which will actually calculate the statistics.
@@ -100,6 +103,7 @@ Lastly, to provide an equally appealing experience for the users browsing the da
 * Implement a dropdown which appears on clicking on each non-private exploration and displays most important statistical data to the user at once (PR for this is still not merged, due to a few failing tests!)
 * Pull Requests: [https://github.com/oppia/oppia/pull/2296](https://github.com/oppia/oppia/pull/2296), [https://github.com/oppia/oppia/pull/2318](https://github.com/oppia/oppia/pull/2318)
 
+---
 
 ### Future of the Project:
 
@@ -107,6 +111,7 @@ Lastly, to provide an equally appealing experience for the users browsing the da
 * Add support for pagination of content in dashboard (was partially implemented in [pull request #2265](https://github.com/oppia/oppia/pull/2265) before deciding to discontinue it for the time being).
 * Collect and display statistics for collections as well, and not just individual explorations.
 
+---
 
 ## Conclusions:
 
@@ -114,6 +119,7 @@ To conclude, I would like to thank Google for enabling students to participate i
 
 Well, during this 3 months of GSoC, I learn a lot. I did the best that I could do with my knowledge and help from the community. And though I can say that most of my work is concluded, there’s still a PR left unmerged, a few ongoing PRs involving work unrelated to GSoC and some more code I've promised to write. And I’m happy to do that!
 
+---
 
 ## Useful Links:
 
