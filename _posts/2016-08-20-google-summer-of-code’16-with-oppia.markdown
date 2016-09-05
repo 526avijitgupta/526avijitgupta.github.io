@@ -37,6 +37,7 @@ The new dashboard page allows creators to view their explorations in either the 
 The statistics shown in the top white row are values calculated across all the explorations of a user. In the default card view, explorations may be clicked on to open up a dropdown which provides statistics for that exploration. However, if the exploration is private then the user will be taken directly to the editor. The explorations can be sorted using the select dropdown and even by clicking on the table headers in the list view.
 In order to ease the process of popularizing the content created, there are options in the dashboard to share explorations on popular social media platforms like Google+, Facebook, and Twitter.
 Lastly, to provide an equally appealing experience for the users browsing the dashboard through mobile devices, care was taken  to ensure the new dashboard be almost as well equipped as it’s desktop version. Here’s how it looks on smaller screens:
+
 ![Markdowm Image][2]
 
 ---
