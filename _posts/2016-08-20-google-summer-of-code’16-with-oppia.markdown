@@ -2,6 +2,7 @@
 title: "Google Summer of Code’16 with Oppia"
 layout: post
 date: 2016-08-20 00:30
+description:
 image: '/assets/images/'
 tag:
 - gsoc
