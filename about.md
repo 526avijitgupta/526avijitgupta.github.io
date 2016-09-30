@@ -1,7 +1,7 @@
 ---
-title: Resume
+title: About
 layout: page
 ---
-![Profile Image]({{ site.url }}/{{ site.picture }})
 
-#### Link to resume: http://526avijitgupta.github.io/Avijit_Gupta_Resume.pdf
+##### Link to Resume: 
+[http://526avijitgupta.github.io/Avijit_Gupta_Resume.pdf](http://526avijitgupta.github.io/Avijit_Gupta_Resume.pdf)
