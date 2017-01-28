@@ -11,11 +11,11 @@ blog: true
 author: Avijit Gupta
 ---
 
-While working on the [ringleader](http://github.com/mozmark/ringleader/) project yesterday, me and [Utkarsh](http://github.com/iamutkarshtiwari/) observed that the errors which were being thrown were because our existing copy of an array contained the same reference as the original array. Thus, a change in the copy of the array was leading to a change in the original array as well. We needed to create a **deep copy** of the original array to overcome this problem.
+### The Problem
 
-#### The Problem
+Now-a-days, I'm working on the [ringleader](http://github.com/mozmark/ringleader/) project. And just yesterday, me and one of my team mates [Utkarsh](http://github.com/iamutkarshtiwari/) observed that there were a couple of errors being generated in our javascript code. Some investigation revealed the source of errors to be a copy of an array which contained the same reference as the original array. Thus, a change in the copy was leading to a change in the original array as well. So, we needed to create a **deep copy** of the original array to overcome this problem.
 
-By default, when copying by `=`, javascript keeps the reference to the same object (called a **shallow copy**). This is often ignored but can lead to you pulling your hair for a long time debugging errors!
+By default, when copying by `=`, javascript keeps the reference to the same object (called a **shallow copy**).
 
 ```
 var a = [1,2,3];
@@ -24,9 +24,9 @@ a[0] = 5;
 console.log(b[0]); // 5
 ```
 
-##### What All we Tried #####
+### What All we Tried
 
-Our initial thought was to use [`Object.create`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/create).
+Our initial thought was to use [Object.create](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/create).
 
 * Using `Object.create`:
 
@@ -39,7 +39,7 @@ obj_copy.name = 'c';
 console.log(obj.name); // 'a'
 ```
 
-But it was later that we realized that since we had multiple objects inside our array, `Object.create` didn't work correctly:
+But it was later that we realized that since we had object(s) inside an array, `Object.create` didn't work correctly:
 
 ```
 var arr = [{name: 'a'}];
@@ -58,10 +58,10 @@ var arr_copy_2 = Object.create(arr);
 // Now, arr_copy_1 and arr_copy_2 still point to the same reference.
 
 arr_copy_1[0].name = 'c';
-console.log(arr_copy_2[0].name); // 'a'
+console.log(arr_copy_2[0].name); // 'c'
 ```
 
-* Using `Object.create` with Arrays:
+* Using `Object.create` with arrays:
 
 On applying `Object.create` to an array, the result wasn't actually a real array (it was a [pseduo array](http://stackoverflow.com/questions/9016051/javascript-arrays-created-with-object-create-not-real-arrays))!
 
@@ -73,7 +73,7 @@ console.log(b); // Object { }
 
 * Using `Object.create` with `Array.from`:
 
-To convert the previously obtained pseduo array into a real array, we tried using `Array.from`:
+To convert the previously obtained pseduo array into a real array, we tried using [Array.from](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from):
 
 ```
 var a = [1,2,3];
@@ -83,7 +83,7 @@ b[0] = 8;
 console.log(c[0]); // 1
 ```
 
-Just as we thought that we have the correct solution, until we found out that this method didn't seem to work in our case since the Array which we were trying to deep copy, wasn't simply composed of numbers or strings, it contained objects and arrays as it's elements:
+At this point we believed that we have the correct solution, until we found out the array which we were trying to deep copy wasn't simply composed of numbers or strings, it was deeply nested with objects, arrays and functions.
 
 ```
 var a = [{name: 1},{name: 2},{name: 3}];
@@ -93,24 +93,23 @@ b[0].name = 8;
 console.log(c[0].name); // 8
 ```
 
-We gave a few more tries to convert the pseduo array into a real array, but each time the reference of it's consisting arrays or objects was still maintained.
+We gave a few more tries to convert the pseduo array into a real array, but each time the reference of it's consisting arrays or objects was still maintained in the copies.
 
 
 * Using `JSON.stringify` and `JSON.parse`:
 
-Continuing further, we tried using another method altogether. But this again did not work since our array contained objects which had `function`s inside them. On [JSON.stringify](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) ing a function, it's lost due to being a non-serialize property:
+Continuing further, we tried using another method altogether. But this again did not work since our array contained objects which had `function`s inside them. On [JSON.stringify](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) ing an object, all it's non-serializable properties are lost:
 
 ```
-var a = {name: 'a', exec: function(args) {return args.length}};
+var a = {name: 'a', exec: function() {return true;}};
 var b = JSON.parse(JSON.stringify(a));
 console.log(b); // {name: 'a'}
 ```
 
-#### The Solution
-
-Credits: StackOverflow
+### The Solution
 
 Finally, on a bit of Googling we found this wonderful utility function which does exactly what we need. It's a recursive function that copies an element's value while handling the cases for the value being an object or an array:
+
 ```
 function copy(o) {
    var output, v, key;
