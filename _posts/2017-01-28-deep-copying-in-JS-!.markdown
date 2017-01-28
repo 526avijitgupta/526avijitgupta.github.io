@@ -28,11 +28,10 @@ console.log(b[0]); // 5
 
 Our initial thought was to use [`Object.create`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/create).
 
-// simple implementation of object.create, complex implementation, using JSON.stringify etc.
-
 * Using `Object.create`:
 
 Object.create seemed to solve the problem when we first looked at it.
+
 ```
 var obj = {name: 'a'};
 var obj_copy = Object.create(obj);
@@ -75,6 +74,7 @@ console.log(b); // Object { }
 * Using `Object.create` with `Array.from`:
 
 To convert the previously obtained pseduo array into a real array, we tried using `Array.from`:
+
 ```
 var a = [1,2,3];
 var b = Array.from(Object.create(a));
@@ -99,6 +99,7 @@ We gave a few more tries to convert the pseduo array into a real array, but each
 * Using `JSON.stringify` and `JSON.parse`:
 
 Continuing further, we tried using another method altogether. But this again did not work since our array contained objects which had `function`s inside them. On [JSON.stringify](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) ing a function, it's lost due to being a non-serialize property:
+
 ```
 var a = {name: 'a', exec: function(args) {return args.length}};
 var b = JSON.parse(JSON.stringify(a));
