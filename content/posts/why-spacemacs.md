@@ -1,6 +1,6 @@
 ---
 title: "Why Spacemacs ?"
-date: 2016-07-23T03:49:49+05:30
+date: 2016-07-23
 tags: ["spacemacs", "emacs", "editors"]
 type: "post"
 image: '/images/spacemacs.png'
