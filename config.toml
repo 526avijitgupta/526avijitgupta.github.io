@@ -9,7 +9,7 @@ pygmentsStyle = "monokai"
 
 [params]
   footer = "Avijit Gupta"
-  description = "Travel | Capture | Code"
+  description = "Travel · Capture · Code"
   avatarURL = "https://avatars0.githubusercontent.com/u/7583815?v=3&s=460"
   avatarSize = "size-m"
   customHeadHTML = ""
